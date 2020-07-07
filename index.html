@@ -8,11 +8,12 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <script src="https://kit.fontawesome.com/29ece32e74.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 </head>
 <body class="grey darken-3">
   <div href="#" data-target="slide-out" class="sidenav-trigger btn sidenav-btn right hide hide-on-med-and-up"><i class="fas fa-bars"></i></div>
 <!----------------------------------Navigace------------------------------->
-    <ul id="slide-out" class="sidenav sidenav-fixed grey darken-4 z-depth-5">
+    <ul id="slide-out" class="sidenav sidenav-fixed grey darken-4 z-depth-5 animate__animated animate__slideInLeft hide-on-small-only">
       <li>
         <div class="user-view">
           <div class="background">
@@ -33,9 +34,9 @@
 
     <div class="content grey darken-3 white-text">
 
-        <div class="header center z-depth-4" id="uvod">
-          <div class="header-title white-text">Tomáš Kebrle</div>
-          <div class="header-subtitle white-text">Amaterský Web-Designér, Designér</div>
+        <div class="header center z-depth-4 animate__animated animate__slideInDown" id="uvod">
+          <div class="header-title white-text animate__animated animate__zoomIn">Tomáš Kebrle</div>
+          <div class="header-subtitle white-text animate__animated animate__zoomIn">Amaterský Web-Designér, Designér</div>
         </div>
 
         <div class="container">
@@ -44,7 +45,7 @@
 
             <div class="row">
               <div class="col s12">
-                 <div class="card grey darken-4 hoverable">
+                 <div class="card grey darken-4 hoverable animate__animated animate__zoomIn">
                    <div class="card-content">
                      <div class="card-title">Vítám tě</div>
                     <p>Ahoj, vítej na mé stránce, najdeš zde na jakých projektech dělám, co mě baví atd.</p>
@@ -56,11 +57,11 @@
           </div>
 
           <div class="about" id="about">
-            <h1 class="center">O mně</h1>
+            <h1 class="center animate__animated animate__zoomIn">O mně</h1>
             <div class="row">
 
               <div class="col s12 l6">
-                <div class="card grey darken-4 hoverable">
+                <div class="card grey darken-4 hoverable animate__animated animate__zoomIn">
                   <div class="card-content">
                     <div class="card-title">O mně</div>
                     <p>Jmenuju se Tomáš, je mi skoro 15 let, bydlím v malé vesničce kde se my líbí.</p>
@@ -69,7 +70,7 @@
               </div>
 
               <div class="col s12 l6">
-                <div class="card grey darken-4 hoverable">
+                <div class="card grey darken-4 hoverable animate__animated animate__zoomIn">
                   <div class="card-content">
                     <div class="card-title">Co mně baví</div>
                     <p>Rád dělám webové stránky, jako například tyhle. Nedávno jsem se začal učit trochu programovat v jazycích Python, JavaScript a PHP <br>
@@ -84,10 +85,10 @@
           </div>
 
           <div class="projects" id="projects">
-            <h1 class="center">Projekty</h1>
-            <h6 class="center">Na čem momentálně, dělám ale i to co už jsem vytvořil</h6>
+            <h1 class="center animate__animated animate__zoomIn">Projekty</h1>
+            <h6 class="center animate__animated animate__zoomIn">Na čem momentálně, dělám ale i to co už jsem vytvořil</h6>
 
-            <div class="row">
+            <div class="row animate__animated animate__zoomIn">
 
               <div class="col s12 l6">
 
@@ -103,7 +104,7 @@
                    </div>
                  </div>
 
-                 <div class="card grey darken-4 hoverable">
+                 <div class="card grey darken-4 hoverable animate__animated animate__zoomIn">
                   <div class="card-image">
                     <img src="./img/osobni-logo.png" alt="">
                     <span class="card-title black-text">Osobní Logo</span>
@@ -183,17 +184,29 @@
     <footer class="page-footer grey darken-2">
       <div class="container">
         <div class="row">
-          <div class="col l12 s12">
+
+          <div class="col l10 s12">
             <h5 class="white-text">Tomáš Kebrle/ tomaskebrle.eu</h5>
             <p class="grey-text text-lighten-4">Díky že jste se koukli na mojí stránku.
-              <br> Btw. ta fotka v sidenavu si můžete stáhnout <a href="https://www.reddit.com/r/wallpaper/comments/f3t50c/moscow_subway_station_1920x1080/">Zde</a>
             </p>
           </div>
+
+          <div class="col s12 l2">
+            <div class="link">
+              <ul>
+                <li><a href="#uvod" class="waves-effect waves-light white-text">Úvod</a></li>
+                <li><a href="#about" class="waves-effect waves-light white-text">O mně</a></li>
+                <li><a href="#projects" class="waves-effect waves-light white-text">Projekty</a></li>
+                <li><a href="#contact" class="waves-effect waves-light white-text">Kontakt</a></li>
+              </ul>
+            </div>
+          </div>
+
         </div>
       </div>
       <div class="footer-copyright grey darken-3">
         <div class="container">
-        © 2020 Tomáš Kebrle /tomaskebrle.eu
+        © 2020 Tomáš Kebrle / <a href="https://tomaskebrle.eu">tomaskebrle.eu</a>
         
         </div>
       </div>

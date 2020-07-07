@@ -95,10 +95,17 @@ header,.content,footer {
    background-color: #ef5350 !important;
  }
 
- .web i{
-   background-color:#90caf9;
+ .github{
+   color: #fff !important;
+   background-color: #2c2c2c !important;
  }
 
- .web i:hover{
-   background-color: #42a5f5 ;
+ .github:hover{
+   background-color: #1b1b1b !important;
+ }
+
+ /*Footer*/
+
+ .link ul li a:hover{
+   text-decoration: underline;
  }
