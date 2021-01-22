@@ -1,207 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tomáš Kebrle/tomaskebrle.eu</title>
-  <link rel="stylesheet" href="./framework.css">
   <link rel="stylesheet" href="style.css">
+  <!-- Materialize css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/29ece32e74.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+  <!-- Animate library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <!-- Nord css -->
+  <link rel="stylesheet" href="../nord.css">
+  <!-- Javascrip -->
+  <script src="../main.js"></script>
 </head>
-<body class="grey darken-3">
-  <div href="#" data-target="slide-out" class="sidenav-trigger btn sidenav-btn right hide hide-on-med-and-up"><i class="fas fa-bars"></i></div>
-<!----------------------------------Navigace------------------------------->
-    <ul id="slide-out" class="sidenav sidenav-fixed grey darken-4 z-depth-5 animate__animated animate__slideInLeft hide-on-small-only">
-      <li>
-        <div class="user-view">
-          <div class="background">
-            <img src="./img/Moscow-Metro.jpg">
-          </div>
-          <a href="#user"><img class="circle" src="./img/tomas-kebrle.jpeg"></a>
-          <a href="#name"><span class="white-text name">Tomáš Kebrle</span></a>
-          <a href="mailto:kebrle.t@gmail.com"><span class="white-text email">kebrle.t@gmail.com</span></a>
+
+<body class="nord0">
+  <div href="#" data-target="slide-out" class="sidenav-trigger btn sidenav-btn right hide hide-on-med-and-up"><i
+      class="fas fa-bars"></i></div>
+  <!----------------------------------Navigace------------------------------->
+  <ul id="slide-out"
+    class="sidenav sidenav-fixed nord1 z-depth-5 animate__animated animate__slideInLeft hide-on-small-only">
+    <li>
+      <div class="user-view">
+        <div class="background">
         </div>
-      </li>
-      <div class="links">
-        <li><a href="#uvod" class="waves-effect waves-light white-text">Úvod</a></li>
-        <li><a href="#about" class="waves-effect waves-light white-text">O mně</a></li>
-        <li><a href="#projects" class="waves-effect waves-light white-text">Projekty</a></li>
-        <li><a href="#contact" class="waves-effect waves-light white-text">Kontakt</a></li>
+        <a href="#user"><img class="circle" src="./img/tomas-kebrle.jpeg"></a>
+        <a href="#name"><span class="white-text name">Tomáš Kebrle</span></a>
+        <a onclick="copyMail()"><span class="white-text email">tomas.kebrle@protonmail.com</span></a>
+        <textarea name="email" id="email" cols="30" rows="10" class="hide" value="string">tomas.kebrle@protonmail.com</textarea>
       </div>
-    </ul>
-
-    <div class="content grey darken-3 white-text">
-
-        <div class="header center z-depth-4 animate__animated animate__slideInDown" id="uvod">
-          <div class="header-title white-text animate__animated animate__zoomIn">Tomáš Kebrle</div>
-          <div class="header-subtitle white-text animate__animated animate__zoomIn">Amaterský Web-Designér a "Programátor"</div>
-        </div>
-
-        <div class="container">
-
-          <div class="about" id="about">
-            <h1 class="center animate__animated animate__zoomIn">O mně</h1>
-            <div class="row">
-
-              <div class="col s12 l6">
-                <div class="card grey darken-4 hoverable animate__animated animate__zoomIn">
-                  <div class="card-content">
-                    <div class="card-title">O mně</div>
-                    <p>Jmenuju se Tomáš, je mi skoro 15 let. A studuji na gymnáziu.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col s12 l6">
-                <div class="card grey darken-4 hoverable animate__animated animate__zoomIn">
-                  <div class="card-content">
-                    <div class="card-title">Co mně baví</div>
-                    <p>Rád dělám webové stránky, jako například tyhle. A díky nečekaným prázdninám a spoustou volného času jsem se začal učit programovat v Pythonu<br> <br>
-                    Také rád chodím na skauty, a občas si zahraju nějakou hru.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="projects" id="projects">
-            <h1 class="center animate__animated animate__zoomIn">Projekty</h1>
-            <h6 class="center animate__animated animate__zoomIn">Na čem momentálně, dělám ale i to co už jsem vytvořil</h6>
-
-            <div class="row animate__animated animate__zoomIn">
-
-              <div class="col s12 l6">
-
-               <div class="card grey darken-4 hoverable">
-                   <div class="card-content">
-                   <span class="card-title">Poznávačka Maker</span>
-                     <p>
-                      Jednoduchý Python script pro stahování obrázků z internetu, a vytváření html souboru s těmito obrázky.
-                    </p>
-                   </div>
-
-                   <div class="card-action">
-                     <a href="https://github.com/Kendy205/poznavackamaker">GitHub repo</a>
-                   </div>
-                 </div>
-
-                 <div class="card grey darken-4 hoverable">
-                  <div class="card-image">
-                    <img src="./img/gvhkvarta.png" alt="">
-                    <span class="card-title black-text">Gvhkvarta.cf</span>
-                   </div>
-                    <div class="card-content">
-                      <p>
-                        Stránka pro mojí třídu, kde se mohou dozvědět nejnovější informace, využít kalkulačky pro matematiku a fyziku(Udělané v javascriptu), a dozvědět se ještě víc o spolužácích
-                      </p>
-                    </div>
-                  </div>
-
-
-               </div> 
-
-              
-
-              <div class="col s12 l6">
-
-                <div class="card grey darken-4 hoverable">
-                  <div class="card-image">
-                    <img src="./img/vodacilounyovh.png" alt="">
-                    <span class="card-title black-text">Vodacilouny.ovh</span>
-                   </div>
-                    <div class="card-content">
-                      <p>
-                        Stránka pro skautský oddíl kam chodím, obsahuje všechno důležité jako novinky, kontakt a galerii
-                      </p>
-                    </div>
-                  </div>
-              </div>
-
-            </div>
-
-
-            <div class="contact" id="contact">
-              <div class="row center">
-
-                <h1 class="center">Kontakt</h1>
-
-                <div class="chip instagram">
-                    <i class="fab fa-instagram"></i> <a href="https://instagram.com/tomas_kebrle" class="not-link">Instagram</a>
-                </div>
-
-                <div class="chip discord">
-                  <i class="fab fa-discord"></i>Kendy205#1645
-              </div>
-
-              <div class="chip e-mail">
-                <i class="fas fa-envelope"></i><a href="mailto:kebrle.t@gmail.com" class="not-link"></a>kebrle.t@gmail.com
-              </div>
-
-              <div class="chip github">
-                <i class="fab fa-github"></i><a href="https://github.com/Kendy205" class="not-link"></a>Kendy205
-              </div>
-
-              </div>
-            </div>
-
-        </div>
-
+    </li>
+    <div class="links">
+      <li><a href="#uvod" class="waves-effect waves-light white-text">Úvod</a></li>
+      <li><a href="#about" class="waves-effect waves-light white-text">O mně</a></li>
+      <li><a href="#projects" class="waves-effect waves-light white-text">Projekty</a></li>
+      <li><a href="#contact" class="waves-effect waves-light white-text">Kontakt</a></li>
     </div>
-   </div>
+  </ul>
 
-    <footer class="page-footer grey darken-2">
-      <div class="container">
+  <div class="content nord3 white-text">
+
+    <div class="header center z-depth-4 animate__animated animate__slideInDown" id="uvod">
+      <div class="header-title nord0-text animate__animated animate__zoomIn">Tomáš Kebrle</div>
+      <br>
+    </div>
+
+    <div class="container">
+
+      <div class="about" id="about">
+        <h1 class="center animate__animated animate__zoomIn">O mně</h1>
         <div class="row">
 
-          <div class="col l10 s12">
-            <h5 class="white-text">Tomáš Kebrle/ tomaskebrle.eu</h5>
-            <p class="grey-text text-lighten-4">Děkuji že jste podívali na moji stránku
-              <br><br>
-              Hostováno na <a href="https://netlify.com">NetLify</a>
-              <br>
-              CSS Framework <a href="https://materializecss.com/">Meterialize</a>
-            </p>
+          <div class="col s12 l6">
+            <div class="card nord0 hoverable animate__animated animate__zoomIn">
+              <div class="card-content">
+                <div class="card-title">O mně</div>
+                <p>Jmenuju se Tomáš, je mi skoro 15 let. A studuji na gymnáziu.</p>
+              </div>
+            </div>
           </div>
 
-          <div class="col s12 l2">
-            <div class="link">
-              <ul>
-                <li><a href="#uvod" class="waves-effect waves-light white-text">Úvod</a></li>
-                <li><a href="#about" class="waves-effect waves-light white-text">O mně</a></li>
-                <li><a href="#projects" class="waves-effect waves-light white-text">Projekty</a></li>
-                <li><a href="#contact" class="waves-effect waves-light white-text">Kontakt</a></li>
-              </ul>
+          <div class="col s12 l6">
+            <div class="card nord0 hoverable animate__animated animate__zoomIn">
+              <div class="card-content">
+                <div class="card-title">Co mně baví</div>
+                <p>Rád dělám webové stránky, jako například tyhle. A díky nečekaným prázdninám a spoustou volného času
+                  jsem se začal učit programovat v Pythonu<br> <br>
+                  Také rád chodím na skauty, a občas si zahraju nějakou hru.
+                </p>
+              </div>
             </div>
           </div>
 
         </div>
+
       </div>
-      <div class="footer-copyright grey darken-3 col s12">
-        <div class="container">
-        © 2020 Tomáš Kebrle / <a href="https://tomaskebrle.eu">tomaskebrle.eu</a>
-        
+
+      <div class="projects" id="projects">
+        <h1 class="center animate__animated animate__zoomIn">Projekty</h1>
+        <h6 class="center animate__animated animate__zoomIn">Na čem momentálně, dělám ale i to co už jsem vytvořil</h6>
+
+        <div class="row animate__animated animate__zoomIn">
+
+          <div class="col s12 l6">
+
+            <div class="card nord0 hoverable">
+              <div class="card-content">
+                <span class="card-title nord6-text">Wiki image scraper</span>
+                <p>
+                  Jednoduchý Python script pro stahování obrázků z internetu, a vytváření html souboru s těmito obrázky.
+                </p>
+              </div>
+
+              <div class="card-action">
+                <a href="https://github.com/Kendy205/wikiimagescraper" class=nord14-text>GitHub repo</a>
+              </div>
+            </div>
+
+            <div class="card nord0 hoverable">
+              <div class="card-content">
+                <span class="card-title nord6-text">Gvhkvarta.cf</span>
+                <p>
+                  Stránka pro mojí třídu, kde se mohou dozvědět nejnovější informace, využít kalkulačky pro matematiku a
+                  fyziku(Udělané v javascriptu), a dozvědět se ještě víc o spolužácích
+                </p>
+              </div>
+            </div>
+
+
+          </div>
+
+
+
+          <div class="col s12 l6">
+
+            <div class="card nord0 hoverable">
+              <div class="card-content">
+                <span class="card-title nord6-text">Vodacilouny.ovh</span>
+                <p>
+                  Stránka pro skautský oddíl kam chodím, obsahuje všechno důležité jako novinky, kontakt a galerii
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
 
 
-<!----------------------------------Scripty------------------------------->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
+      <div class="contact" id="contact">
+        <h1 class="nord6-text center">Kontakt</h1>
+        <div class="row center">
+          <a class="btn nord0 waves-effect"> <span class="fab fa-github"></span> GitHub</a>
+          <a onclick="copyMail()" class="btn nord0 waves-effect"><span class="fas fa-envelope"></span> Email</a>
+          <a href="" class="btn nord0 waves-effect"> <span class="fab fa-discord"></span> Kendy205 #1645</a>  
+        </div>
+       
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="page-footer nord1">
+    <div class="container">
+      <div class="row">
+
+        <div class="col l10 s12 ">
+          <h5 class="nord4-text">Tomáš Kebrle/ tomaskebrle.eu</h5>
+          <p class="nord5-text">
+
+            <br><br>
+            Hostováno na <a href="https://netlify.com">NetLify</a>
+            <br>
+            CSS Framework <a href="https://materializecss.com/">Meterialize</a>
+          </p>
+        </div>
+
+        <div class="col s12 l2">
+          <div class="link">
+            <ul>
+              <li><a href="#uvod" class="waves-effect waves-light nord5-text">Úvod</a></li>
+              <li><a href="#about" class="waves-effect waves-light nord5-text">O mně</a></li>
+              <li><a href="#projects" class="waves-effect waves-light nord5-text">Projekty</a></li>
+              <li><a href="#contact" class="waves-effect waves-light nord5-text">Kontakt</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-copyright nord0">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 l10">
+            © 2020 Tomáš Kebrle / <a href="https://tomaskebrle.eu">tomaskebrle.eu</a>
+          </div>
+          <div class="col s12 l2">
+            <a onclick="copyMail()">tomas.kebrle@protonmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!----------------------------------Scripty------------------------------->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
       var elems = document.querySelectorAll('.sidenav');
       var instances = M.Sidenav.init(elems);
-      });
+    });
 
-      document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.dropdown-trigger');
-    var instances = M.Dropdown.init(elems);
-  });
-    </script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.dropdown-trigger');
+      var instances = M.Dropdown.init(elems);
+    });
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
-</html> 
+
+</html>

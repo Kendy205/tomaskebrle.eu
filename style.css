@@ -20,7 +20,7 @@ body{
   z-index: 9999;
 }
 
-header,.content,footer {
+.content,footer {
   padding-left: 300px;
 }
 
@@ -32,12 +32,14 @@ header,.content,footer {
 
  /*Header*/
  .header{
-   background-image: url(img/bg.png);
+   background-image: url(img/mountain.jpg);
    background-image: linear-gradient(to bottom rgba(0,0,0,0.7), rgba(0,0,0,0.1));
    position: relative;
    top:0;
    background-size: cover;
    margin-bottom: 20px;
+   min-width: 100%;
+   color: #2e3440;
  }
 
  .header-title{
