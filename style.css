@@ -19,6 +19,13 @@ body{
 a{
   color: #5e81ac !important;
 }
+.underline:hover{
+  text-decoration:underline;
+}
+
+.no-underline{
+  text-decoration: none !important; 
+}
 
 /*Místo pro sidenav*/
 
@@ -63,7 +70,7 @@ a{
    transition: 0.5s;
  }
  .link ul li a:hover{
-   color: #a3be8c !important;
+   color: #5e81ac !important;
   }
 
  
