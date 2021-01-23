@@ -5,5 +5,15 @@ function copyMail(){
     el.select();
     document.execCommand('copy');
     document.body.removeChild(el)
-    M.toast({html: 'Adresa zkopírovaná do schránky', classes: 'rounded, nord0'})
+    M.toast({html: 'Email zkopírovan do schránky', classes: 'nord0'})
+}
+
+function copyDiscord(){
+    const el = document.createElement('textarea');
+    el.value = 'Kendy205 #1645';
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el)
+    M.toast({html: 'Jméno zkopírované do schránky', classes: 'nord0'})
 }

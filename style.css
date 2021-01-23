@@ -1,3 +1,4 @@
+/*Basic stuff*/
 html{
   scroll-behavior: smooth;
 }
@@ -11,14 +12,15 @@ body{
   flex-direction: column;
 }
 
-.not-link{
-  color: #000000;
+.pointer{
+  cursor: pointer;  
 }
 
-.sidenav-btn{
-  position: absolute;
-  z-index: 9999;
+a{
+  color: #5e81ac !important;
 }
+
+/*Místo pro sidenav*/
 
 .content,footer {
   padding-left: 300px;
@@ -54,60 +56,14 @@ body{
  }
 
 
- /*Kontakt*/
-
-
-
- .chip{
-   font-size: 1em;
-   padding: 16px;
-   transition: 0.5s;
-   color:#000 !important;
-   cursor: pointer;
- }
-
- .chip i{
-   padding-right:16px;
- }
-
- .instagram{
-  background-color: #f48fb1 !important;
-  color: #000;
- }
-
- .instagram:hover{
-  background-color:#f06292 !important;
- }
-
- .discord{
-   background-color: #651fff !important;
-   color: #fff !important;
- }
-
- .discord:hover{
-   background-color: #311b92 !important;
- }
-
- .e-mail{
-   color: #000;
-   background-color: #e57373 !important ;
- }
-
- .e-mail:hover{
-   background-color: #ef5350 !important;
- }
-
- .github{
-   color: #fff !important;
-   background-color: #2c2c2c !important;
- }
-
- .github:hover{
-   background-color: #1b1b1b !important;
- }
-
  /*Footer*/
 
- .link ul li a:hover{
-   text-decoration: underline;
+ .link ul li a{
+   color: #e5e9f0 !important;
+   transition: 0.5s;
  }
+ .link ul li a:hover{
+   color: #a3be8c !important;
+  }
+
+ 

@@ -30,8 +30,7 @@
         </div>
         <a href="#user"><img class="circle" src="./img/tomas-kebrle.jpeg"></a>
         <a href="#name"><span class="white-text name">Tomáš Kebrle</span></a>
-        <a onclick="copyMail()"><span class="white-text email">tomas.kebrle@protonmail.com</span></a>
-        <textarea name="email" id="email" cols="30" rows="10" class="hide" value="string">tomas.kebrle@protonmail.com</textarea>
+        <a onclick="copyMail()"><span class="white-text email pointer">tomas.kebrle@protonmail.com</span></a>
       </div>
     </li>
     <div class="links">
@@ -103,11 +102,14 @@
 
             <div class="card nord0 hoverable">
               <div class="card-content">
-                <span class="card-title nord6-text">Gvhkvarta.cf</span>
+                <span class="card-title nord6-text">Tomaskebrle.eu</span>
                 <p>
-                  Stránka pro mojí třídu, kde se mohou dozvědět nejnovější informace, využít kalkulačky pro matematiku a
-                  fyziku(Udělané v javascriptu), a dozvědět se ještě víc o spolužácích
+                  Moje osobní stránka, uděláná pomocí <a href="https://materializecss.com" class="nord14-text">Materialize CSS</a> framework a 
+                  <a href="https://nordtheme.com" class="nord14-text">Nord</a> barevného schéma.
                 </p>
+              </div>
+              <div class="card-action">
+                <a href="https://github.com/kendy205/tomaskebrle.eu" class="nord14-text">Github Repo</a>
               </div>
             </div>
 
@@ -146,9 +148,9 @@
       <div class="contact" id="contact">
         <h1 class="nord6-text center">Kontakt</h1>
         <div class="row center">
-          <a class="btn nord0 waves-effect"> <span class="fab fa-github"></span> GitHub</a>
-          <a onclick="copyMail()" class="btn nord0 waves-effect"><span class="fas fa-envelope"></span> Email</a>
-          <a href="" class="btn nord0 waves-effect"> <span class="fab fa-discord"></span> Kendy205 #1645</a>  
+          <a class="btn nord0 waves-effect nord6-text" href="https://github.com/Kendy205"> <span class="fab fa-github"></span> GitHub</a>
+          <a onclick="copyMail()" class="btn nord0 waves-effect nord6-text"><span class="fas fa-envelope"></span> Email</a>
+          <a class="btn nord0 waves-effect nord6-text" onclick="copyDiscord()"> <span class="fab fa-discord"></span> Kendy205 #1645</a>  
         </div>
        
       </div>
@@ -174,10 +176,10 @@
         <div class="col s12 l2">
           <div class="link">
             <ul>
-              <li><a href="#uvod" class="waves-effect waves-light nord5-text">Úvod</a></li>
-              <li><a href="#about" class="waves-effect waves-light nord5-text">O mně</a></li>
-              <li><a href="#projects" class="waves-effect waves-light nord5-text">Projekty</a></li>
-              <li><a href="#contact" class="waves-effect waves-light nord5-text">Kontakt</a></li>
+              <li><a href="#uvod" class="footer-link">Úvod</a></li>
+              <li><a href="#about" class="footer-link">O mně</a></li>
+              <li><a href="#projects" class="footer-link">Projekty</a></li>
+              <li><a href="#contact" class="footer-link">Kontakt</a></li>
             </ul>
           </div>
         </div>
@@ -191,7 +193,7 @@
             © 2020 Tomáš Kebrle / <a href="https://tomaskebrle.eu">tomaskebrle.eu</a>
           </div>
           <div class="col s12 l2">
-            <a onclick="copyMail()">tomas.kebrle@protonmail.com</a>
+            <a onclick="copyMail()" class="pointer">tomas.kebrle@protonmail.com</a>
           </div>
         </div>
       </div>
