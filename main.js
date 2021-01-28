@@ -1,3 +1,4 @@
+// Zkopírování emailu
 function copyMail(){
     const el = document.createElement('textarea');
     el.value = 'tomaskebrle@protonmail.com';
@@ -8,6 +9,7 @@ function copyMail(){
     M.toast({html: 'Email zkopírovan do schránky', classes: 'nord0'})
 }
 
+// Zkopírování Discord
 function copyDiscord(){
     const el = document.createElement('textarea');
     el.value = 'Kendy205 #1645';

@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
   <!-- Nord css -->
   <link rel="stylesheet" href="nord.css">
-  <!-- Javascrip -->
+  <!-- Javascript -->
   <script src="../main.js"></script>
 </head>
 
@@ -52,11 +52,11 @@
 
       <div class="about" id="about">
         <h1 class="center animate__animated animate__zoomIn">O mně</h1>
-        <div class="row">
+        <div class="row  animate__animated animate__zoomIn">
 
           <div class="col s12 l6">
-            <div class="card nord0 hoverable animate__animated animate__zoomIn">
-              <div class="card-content">
+            <div class="card nord0 hoverable" data-tilt data-tilt-perspective="5000">
+              <div class="card-content transform">
                 <div class="card-title">O mně</div>
                 <p>Jmenuju se Tomáš, je mi skoro 15 let. A studuji na gymnáziu.</p>
               </div>
@@ -64,10 +64,10 @@
           </div>
 
           <div class="col s12 l6">
-            <div class="card nord0 hoverable animate__animated animate__zoomIn">
-              <div class="card-content">
+            <div class="card nord0 hoverable"data-tilt data-tilt-perspective="5000">
+              <div class="card-content transform">
                 <div class="card-title">Co mně baví</div>
-                <p>Rád dělám webové stránky, jako například tyhle. A díky nečekaným prázdninám a spoustou volného času
+                <p class="transform">Rád dělám webové stránky, jako například tyhle. A díky nečekaným prázdninám a spoustou volného času
                   jsem se začal učit programovat v Pythonu<br> <br>
                   Také rád chodím na skauty, a občas si zahraju nějakou hru.
                 </p>
@@ -87,29 +87,28 @@
 
           <div class="col s12 l6">
 
-            <div class="card nord0 hoverable">
+            <div class="card nord0 hoverable" data-tilt data-tilt-perspective="5000">
               <div class="card-content">
                 <span class="card-title nord6-text">Wiki image scraper</span>
                 <p>
                   Jednoduchý Python script pro stahování obrázků z internetu, a vytváření html souboru s těmito obrázky.
                 </p>
               </div>
-
               <div class="card-action">
-                <a href="https://github.com/Kendy205/wikiimagescraper" class=nord14-text>GitHub repo</a>
+                <div class="transform"><a href="https://github.com/Kendy205/wikiimagescraper" class="nord14-text transform">GitHub repo</a></div>
               </div>
             </div>
 
-            <div class="card nord0 hoverable">
+            <div class="card nord0 hoverable" data-tilt data-tilt-perspective="5000">
               <div class="card-content">
                 <span class="card-title nord6-text">Tomaskebrle.eu</span>
                 <p>
-                  Moje osobní stránka, uděláná pomocí <a href="https://materializecss.com" class="nord14-text underline">Materialize CSS</a> framework a 
-                  <a href="https://nordtheme.com" class="nord14-text underline">Nord</a> barevného schéma.
+                  Moje osobní stránka, uděláná pomocí <a href="https://materializecss.com" class="nord10-text underline">Materialize CSS</a> framework a 
+                  <a href="https://nordtheme.com" class="nord10-text underline">Nord</a> barevného schéma.
                 </p>
               </div>
               <div class="card-action">
-                <a href="https://github.com/kendy205/tomaskebrle.eu" class="nord14-text">Github Repo</a>
+                <div class="transform"><a href="https://github.com/kendy205/tomaskebrle.eu" class="nord14-text">Github Repo</a></div>
               </div>
             </div>
 
@@ -120,7 +119,7 @@
 
           <div class="col s12 l6">
 
-            <div class="card nord0 hoverable">
+            <div class="card nord0 hoverable" data-tilt data-tilt-perspective="5000">
               <div class="card-content">
                 <span class="card-title nord6-text">Vodacilouny.ovh</span>
                 <p>
@@ -128,16 +127,16 @@
                 </p>
               </div>
               <div class="card-action">
-                <a href="https://github.com/kendy205/vodacilouny.ovh/" class="nord14-text">Github repo</a>
+                <div class="transform"><a href="https://github.com/kendy205/vodacilouny.ovh/" class="nord14-text">Github repo</a></div>
               </div>
             </div>
-            <div class="card nord0 hoverable">
+            <div class="card nord0 hoverable" data-tilt data-tilt-perspective="5000">
               <div class="card-content">
                 <div class="card-title nord6-text">Workspace movement switcher</div>
                 Python script, který změní workspace (Windows desktop), na jinou když začne detekovat pohyb. Funguje pomocí openCV a pyautogui  
               </div>
               <div class="card-action">
-                  <a href="https://github.com/Kendy205/workspacemovementswitcher" class="nord14-text">Github Repo</a>
+                  <div class="transform"><a href="https://github.com/Kendy205/workspacemovementswitcher" class="nord14-text">Github Repo</a></div>
                 </div>
             </div>
           </div>
@@ -214,6 +213,7 @@
     });
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="..\node_modules\tilt.js\dest\tilt.jquery.js"></script>
 </body>
-
 </html>
