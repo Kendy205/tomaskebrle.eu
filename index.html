@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tomáš Kebrle/tomaskebrle.eu</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.jpg">
   <!-- Materialize css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <!-- Font Awesome -->
@@ -35,10 +36,10 @@
       </div>
     </li>
     <div class="links">
-      <li><a href="#uvod" class="waves-effect waves-light white-text">Úvod</a></li>
-      <li><a href="#about" class="waves-effect waves-light white-text">O mně</a></li>
-      <li><a href="#projects" class="waves-effect waves-light white-text">Projekty</a></li>
-      <li><a href="#contact" class="waves-effect waves-light white-text">Kontakt</a></li>
+      <li><a href="#uvod" class="waves-effect waves-light white-text">úvod</a></li>
+      <li><a href="#about" class="waves-effect waves-light white-text">o mně</a></li>
+      <li><a href="#projects" class="waves-effect waves-light white-text">projekty</a></li>
+      <li><a href="#contact" class="waves-effect waves-light white-text">kontakt</a></li>
     </div>
   </ul>
 
@@ -52,24 +53,14 @@
     <div class="container">
 
       <div class="about" id="about">
-        <h1 class="center animate__animated animate__zoomIn">O mně</h1>
+        <h1 class="center animate__animated animate__zoomIn">o mně</h1>
         <div class="row  animate__animated animate__zoomIn">
-
-          <div class="col s12 l6">
-            <div class="card nord0 hoverable" data-tilt>
-              <div class="card-content transform">
-                <div class="card-title">O mně</div>
-                <p>Jmenuju se Tomáš, je mi skoro 15 let. A studuji na gymnáziu.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 l6">
-            <div class="card nord0 hoverable"data-tilt>
-              <div class="card-content transform">
-                <div class="card-title">Co mně baví</div>
-                <p class="transform">Rád dělám webové stránky, jako například tyhle. A díky nečekaným prázdninám a spoustou volného času
-                  jsem se začal učit programovat v Pythonu<br> <br>
+          <div class="col s12">
+            <div class="card nord0 hoverable"data-tilt perspective="10">
+              <div class="card-content">
+                <p class="transform">
+                  Jmenuju se Tomáš, je mi 15 let. A studuji na gymnáziu.
+                  Rád dělám webové stránky, jako například tyhle. Momentálně se také učím C#, a Unity a občas udělám něco v Pythonu<br><br>
                   Také rád chodím na skauty, a občas si zahraju nějakou hru.
                 </p>
               </div>
@@ -81,7 +72,7 @@
       </div>
 
       <div class="projects" id="projects">
-        <h1 class="center animate__animated animate__zoomIn">Projekty</h1>
+        <h1 class="center animate__animated animate__zoomIn">projekty</h1>
         <h6 class="center animate__animated animate__zoomIn">Na čem momentálně, dělám ale i to co už jsem vytvořil</h6>
 
         <div class="row animate__animated animate__zoomIn">
@@ -90,7 +81,7 @@
 
             <div class="card nord0 hoverable" data-tilt data-tilt-perspective="50000">
               <div class="card-content">
-                <span class="card-title nord6-text">Wiki image scraper</span>
+                <span class="card-title nord6-text">wiki image scraper</span>
                 <p>
                   Jednoduchý Python script pro stahování obrázků z internetu, a vytváření html souboru s těmito obrázky.
                 </p>
@@ -102,7 +93,7 @@
 
             <div class="card nord0 hoverable" data-tilt>
               <div class="card-content">
-                <span class="card-title nord6-text">Tomaskebrle.eu</span>
+                <span class="card-title nord6-text">tomaskebrle.eu</span>
                 <p>
                   Moje osobní stránka, uděláná pomocí <a href="https://materializecss.com" class="nord10-text underline">Materialize CSS</a> framework a 
                   <a href="https://nordtheme.com" class="nord10-text underline">Nord</a> barevného schéma.
@@ -122,7 +113,7 @@
 
             <div class="card nord0 hoverable" data-tilt>
               <div class="card-content">
-                <span class="card-title nord6-text">Vodacilouny.ovh</span>
+                <span class="card-title nord6-text">vodacilouny.ovh</span>
                 <p>
                   Stránka pro skautský oddíl kam chodím, obsahuje všechno důležité jako novinky, kontakt a galerii.
                 </p>
@@ -133,7 +124,7 @@
             </div>
             <div class="card nord0 hoverable" data-tilt>
               <div class="card-content">
-                <div class="card-title nord6-text">Workspace movement switcher</div>
+                <div class="card-title nord6-text">workspace movement switcher</div>
                 Python script, který změní workspace (Windows desktop), na jinou když začne detekovat pohyb. Funguje pomocí openCV a pyautogui  
               </div>
               <div class="card-action">
@@ -146,10 +137,10 @@
 
 
       <div class="contact" id="contact">
-        <h1 class="nord6-text center">Kontakt</h1>
+        <h1 class="nord6-text center">kontakt</h1>
         <div class="row center">
           <a class="btn nord0 waves-effect nord6-text no-underline" href="https://github.com/Kendy205"> <span class="fab fa-github"></span> GitHub</a>
-          <a onclick="copyMail()" class="btn nord0 waves-effect nord6-text no-underline"><span class="fas fa-envelope"></span> Email</a>
+          <a class="btn nord0 waves-effect nord6-text no-underline" href="mailto:tomas.kebrle@protonmail.com"><span class="fas fa-envelope"></span> Email</a>
           <a class="btn nord0 waves-effect nord6-text no-underline" onclick="copyDiscord()"> <span class="fab fa-discord"></span> Kendy205 #1645</a>  
         </div>
        
@@ -158,42 +149,40 @@
     </div>
   </div>
 
-  <footer class="page-footer nord1">
+  <footer class="page-footer nord0">
     <div class="container">
       <div class="row">
 
         <div class="col l10 s12 ">
-          <h5 class="nord4-text">Tomáš Kebrle/ tomaskebrle.eu</h5>
-          <p class="nord5-text">
-
-            <br><br>
-            Hostováno na <a href="https://netlify.com" class="underline">NetLify</a>
-            <br>
-            CSS Framework <a href="https://materializecss.com/" class="underline" >Meterialize</a>
-          </p>
+          <h5 class="nord4-text">tomaskebrle.eu</h5>
+          <div class="row padding">
+            <div class="icons col pointer"><a href="https://github.com/kendy205"><i class="fab fa-github"></i></a></div>
+            <div class="icons col pointer"><a href="mailto:tomas.kebrle@protonmail.com"><i class="fas fa-envelope"></i></a></div>
+            <div class="icons col pointer"><a onclick="copyDiscord()"><i class="fab fa-discord"></i></a></div>
+            <div class="icons col pointer"><a href="https://tomaskebrle.eu"><i class="fas fa-globe"></i></a></div>
+          </div>
         </div>
 
         <div class="col s12 l2">
-          <div class="link">
             <ul>
-              <li><a href="#uvod" class="footer-link underline">Úvod</a></li>
-              <li><a href="#about" class="footer-link underline">O mně</a></li>
-              <li><a href="#projects" class="footer-link underline">Projekty</a></li>
-              <li><a href="#contact" class="footer-link underline">Kontakt</a></li>
+              <h5 class="nord5-text">navigace</h5>
+              <li><a href="#uvod" class="footer-link">úvod</a></li>
+              <li><a href="#about" class="footer-link">o mně</a></li>
+              <li><a href="#projects" class="footer-link">projekty</a></li>
+              <li><a href="#contact" class="footer-link">kontakt</a></li>
             </ul>
-          </div>
         </div>
 
       </div>
     </div>
-    <div class="footer-copyright nord0">
+    <div class="footer-copyright nord1">
       <div class="container">
         <div class="row">
           <div class="col s12 l10">
-            © 2020 Tomáš Kebrle / <a href="https://tomaskebrle.eu" class="underline">tomaskebrle.eu</a>
+            © 2020 Tomáš Kebrle / <a href="https://tomaskebrle.eu" class="underline nord10-text">tomaskebrle.eu</a>
           </div>
           <div class="col s12 l2">
-            <a href="mailto:tomas.kebrle@protonmail.com" class="pointer underline">tomas.kebrle@protonmail.com</a>
+            <a href="mailto:tomas.kebrle@protonmail.com" class="pointer underline nord10-text">tomas.kebrle@protonmail.com</a>
           </div>
         </div>
       </div>
@@ -222,7 +211,7 @@
   <script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>
   <script>
     $('.card').tilt({
-      maxTilt: 10,
+      maxTilt: 5,
       perspective: 5000,
       scale: 1.05,
       speed: 300,
