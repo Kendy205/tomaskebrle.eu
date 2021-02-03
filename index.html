@@ -176,10 +176,10 @@
         <div class="col s12 l2">
           <div class="link">
             <ul>
-              <li><a href="#uvod" class="footer-link">Úvod</a></li>
-              <li><a href="#about" class="footer-link">O mně</a></li>
-              <li><a href="#projects" class="footer-link">Projekty</a></li>
-              <li><a href="#contact" class="footer-link">Kontakt</a></li>
+              <li><a href="#uvod" class="footer-link underline">Úvod</a></li>
+              <li><a href="#about" class="footer-link underline">O mně</a></li>
+              <li><a href="#projects" class="footer-link underline">Projekty</a></li>
+              <li><a href="#contact" class="footer-link underline">Kontakt</a></li>
             </ul>
           </div>
         </div>
@@ -222,10 +222,10 @@
   <script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>
   <script>
     $('.card').tilt({
+      maxTilt: 10,
       perspective: 5000,
       scale: 1.05,
-      glare: true,
-      maxGlare: .01
+      speed: 300,
   });
   </script>
 </body>
