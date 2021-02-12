@@ -431,6 +431,7 @@ body{
 
  .card{
    transform-style: preserve-3d;
+   cursor: default;
  }
 
  .card-content{

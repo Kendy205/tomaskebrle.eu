@@ -32,8 +32,8 @@
         </div>
         <a href="#user"><img class="circle" src="./img/tomas-kebrle.jpeg"></a>
         <a href="#name"><span class="white-text name">Tomáš Kebrle</span></a>
-        <a href="mailto:tomas.kebrle@protonmail.com"><span
-            class="white-text email pointer">tomas.kebrle@protonmail.com</span></a>
+        <a href="mailto:tomas.kebrle@pm.me"><span
+            class="white-text email pointer">tomas.kebrle@pm.me</span></a>
       </div>
     </li>
     <div class="links">
@@ -147,7 +147,7 @@
         <div class="row center">
           <a class="btn nord0 waves-effect nord6-text no-underline" href="https://github.com/Kendy205"> <span
               class="fab fa-github"></span> GitHub</a>
-          <a class="btn nord0 waves-effect nord6-text no-underline" href="mailto:tomas.kebrle@protonmail.com"><span
+          <a class="btn nord0 waves-effect nord6-text no-underline" href="mailto:tomas.kebrle@pm.me"><span
               class="fas fa-envelope"></span> Email</a>
           <a class="btn nord0 waves-effect nord6-text no-underline" onclick="copyDiscord()"> <span
               class="fab fa-discord"></span> Kendy205 #1645</a>
@@ -166,7 +166,7 @@
           <h5 class="nord4-text">tomaskebrle.eu</h5>
           <div class="row padding">
             <div class="icons col pointer"><a href="https://github.com/kendy205"><i class="fab fa-github"></i></a></div>
-            <div class="icons col pointer"><a href="mailto:tomas.kebrle@protonmail.com"><i
+            <div class="icons col pointer"><a href="mailto:tomas.kebrle@pm.me"><i
                   class="fas fa-envelope"></i></a></div>
             <div class="icons col pointer"><a onclick="copyDiscord()"><i class="fab fa-discord"></i></a></div>
             <div class="icons col pointer"><a href="https://tomaskebrle.eu"><i class="fas fa-globe"></i></a></div>
@@ -202,9 +202,9 @@
             © 2020 Tomáš Kebrle / <a href="https://tomaskebrle.eu" class="underline nord10-text">tomaskebrle.eu</a>
           </div>
           <div class="col s12 l2">
-            <a href="mailto:tomas.kebrle@protonmail.com"
-              class="pointer underline nord10-text">tomas.kebrle@protonmail.com</a>
-          </div>
+            <p>
+              Made with <i class="fas fa-heart nord11-text"></i> by <a href="mailto:tomas.kebrle@pm.me" class="nord10-text underline">Tomáš</a>
+            </p>
         </div>
       </div>
     </div>
@@ -230,10 +230,12 @@
   <script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>
   <script>
     $('.card').tilt({
-      maxTilt: 5,
+      maxTilt: 10,
       perspective: 5000,
       scale: 1.05,
       speed: 300,
+      glare: true,
+      maxGlare: .1
     });
   </script>
 </body>
