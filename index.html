@@ -1,231 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tomáš Kebrle / tomaskebrle.eu</title>
+    <link rel="shortcut icon" type="image/jpg" href="favicon.jpg"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  </head>
+  <body>
+    <canvas id="bg" class="bg"></canvas>
+    <div id="particles-js"></div>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tomáš Kebrle/tomaskebrle.eu</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="favicon.jpg">
-  <!-- Materialize css -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/29ece32e74.js" crossorigin="anonymous"></script>
-  <!-- Animate library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
-  <!-- Nord css -->
-  <link rel="stylesheet" href="nord.css">
-  <!-- Javascript -->
-  <script src="../main.js"></script>
-  <script src="vanilla-tilt.min.js"></script>
-  <!-- Font -->
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
-</head>
-
-<body class="nord0">
-  <div href="#" data-target="slide-out" class="sidenav-trigger btn sidenav-btn right hide hide-on-med-and-up"><i
-      class="fas fa-bars"></i></div>
-  <!--Navigace-->
-  <ul id="slide-out"
-    class="sidenav sidenav-fixed nord1 z-depth-5 animate__animated animate__slideInLeft hide-on-small-only">
-    <li>
-      <div class="user-view">
-        <div class="background nord0">
-        </div>
-        <a href="#user"><img class="circle" src="./img/tomas-kebrle.jpeg"></a>
-        <a href="#name"><span class="white-text name">Tomáš Kebrle</span></a>
-        <a href="mailto:tomas.kebrle@pm.me"><span
-            class="white-text email pointer">tomas.kebrle@pm.me</span></a>
-      </div>
-    </li>
-    <div class="links">
-      <li><a href="#uvod" class="waves-effect waves-light white-text">úvod</a></li>
-      <li><a href="#about" class="waves-effect waves-light white-text">o mně</a></li>
-      <li><a href="#projects" class="waves-effect waves-light white-text">projekty</a></li>
-      <li><a href="#contact" class="waves-effect waves-light white-text">kontakt</a></li>
-    </div>
-  </ul>
-
-  <div class="content nord3 white-text">
-
-    <div class="header center z-depth-4 animate__animated animate__slideInDown" id="uvod">
-      <div class="header-title nord0-text animate__animated animate__zoomIn">Tomáš Kebrle</div>
-      <br>
-    </div>
-
-    <div class="container">
-
-      <div class="about" id="about">
-        <h1 class="center animate__animated animate__zoomIn">o mně</h1>
-        <div class="row  animate__animated animate__zoomIn">
-          <div class="col s12">
-            <div class="card nord0 hoverable">
-              <div class="card-content">
-                <p class="transform">
-                  Jmenuju se Tomáš, je mi 15 let. A studuji na gymnáziu.
-                  Rád dělám webové stránky, jako například tyhle. Momentálně se také učím C#, a Unity a občas udělám
-                  něco v Pythonu<br><br>
-                  Také rád chodím na skauty, a občas si zahraju nějakou hru.
-                </p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="projects" id="projects">
-        <h1 class="center animate__animated animate__zoomIn">projekty</h1>
-        <div class="row animate__animated animate__zoomIn">
-
-          <div class="col s12 l6">
-
-            <div class="card nord0 hoverable">
-              <div class="card-content">
-                <span class="card-title nord6-text">wiki image scraper</span>
-                <p>
-                  Jednoduchý Python script pro stahování obrázků z internetu, a vytváření html souboru s těmito obrázky.
-                </p>
-              </div>
-              <div class="card-action">
-                <div class="transform"><a href="https://github.com/Kendy205/wikiimagescraper"
-                    class="nord14-text transform">GitHub repo</a></div>
-              </div>
-            </div>
-
-            <div class="card nord0 hoverable">
-              <div class="card-content">
-                <span class="card-title nord6-text">tomaskebrle.eu</span>
-                <p>
-                  Moje osobní stránka, uděláná pomocí <a href="https://materializecss.com"
-                    class="nord10-text underline">Materialize CSS</a> framework a
-                  <a href="https://nordtheme.com" class="nord10-text underline">Nord</a> barevného schéma.
-                </p>
-              </div>
-              <div class="card-action">
-                <div class="transform"><a href="https://github.com/kendy205/tomaskebrle.eu" class="nord14-text">Github
-                    Repo</a></div>
-              </div>
-            </div>
-
-
-          </div>
-
-
-
-          <div class="col s12 l6">
-
-            <div class="card nord0 hoverable">
-              <div class="card-content">
-                <span class="card-title nord6-text">vodacilouny.ovh</span>
-                <p>
-                  Stránka pro skautský oddíl kam chodím, obsahuje všechno důležité jako novinky, kontakt a galerii.
-                </p>
-              </div>
-              <div class="card-action">
-                <div class="transform"><a href="https://vodacilouny.ovh" class="nord14-text">Odkaz na stránku</a></div>
-              </div>
-            </div>
-            <div class="card nord0 hoverable">
-              <div class="card-content">
-                <div class="card-title nord6-text">workspace movement switcher</div>
-                Python script, který změní workspace (Windows desktop), na jinou když začne detekovat pohyb. Funguje
-                pomocí openCV a pyautogui
-              </div>
-              <div class="card-action">
-                <div class="transform"><a href="https://github.com/Kendy205/workspacemovementswitcher"
-                    class="nord14-text">Github Repo</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="contact" id="contact">
-        <h1 class="nord6-text center">kontakt</h1>
-        <div class="row center">
-          <a class="btn nord0 waves-effect nord6-text no-underline" href="https://github.com/Kendy205"> <span
-              class="fab fa-github"></span> GitHub</a>
-          <a class="btn nord0 waves-effect nord6-text no-underline" href="mailto:tomas.kebrle@pm.me"><span
-              class="fas fa-envelope"></span> Email</a>
-          <a class="btn nord0 waves-effect nord6-text no-underline" onclick="copyDiscord()"> <span
-              class="fab fa-discord"></span> Kendy205 #1645</a>
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-
-  <footer class="page-footer nord0">
-    <div class="container">
-      <div class="row">
-
-        <div class="col l3 s12 ">
-          <h5 class="nord4-text">tomaskebrle.eu</h5>
-          <div class="row padding">
-            <div class="icons col pointer"><a href="https://github.com/kendy205"><i class="fab fa-github"></i></a></div>
-            <div class="icons col pointer"><a href="mailto:tomas.kebrle@pm.me"><i
-                  class="fas fa-envelope"></i></a></div>
-            <div class="icons col pointer"><a onclick="copyDiscord()"><i class="fab fa-discord"></i></a></div>
-            <div class="icons col pointer"><a href="https://tomaskebrle.eu"><i class="fas fa-globe"></i></a></div>
-          </div>
-        </div>
-
-        <div class="col l6 s12">
-          <h5 class="nord4-text">o mně</h5>
-          <p class="nord3-text">
-            Jmenuju se Tomáš, je mi 15 let. A studuji na gymnáziu.
-            Rád dělám webové stránky, jako například tyhle. Momentálně se také učím C#, a Unity a občas udělám něco v
-            Pythonu<br><br>
-            Také rád chodím na skauty, a občas si zahraju nějakou hru.
-          </p>
-        </div>
-
-        <div class="col s12 l2 offset-l1">
-          <ul>
-            <h5 class="nord5-text">navigace</h5>
-            <li><a href="#uvod" class="footer-link">úvod</a></li>
-            <li><a href="#about" class="footer-link">o mně</a></li>
-            <li><a href="#projects" class="footer-link">projekty</a></li>
-            <li><a href="#contact" class="footer-link">kontakt</a></li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-    <div class="footer-copyright nord1">
+    <main>
       <div class="container">
+        <div class="pageMargin"></div>
         <div class="row">
-          <div class="col s12 l10">
-            © 2020 Tomáš Kebrle / <a href="https://tomaskebrle.eu" class="underline nord10-text">tomaskebrle.eu</a>
-          </div>
-          <div class="col s12 l2">
+          <div class="karta col l6 s12">
+            <h1>O mně</h1>
             <p>
-              Made with <i class="fas fa-heart nord11-text"></i> by <a href="mailto:tomas.kebrle@pm.me" class="nord10-text underline">Tomáš</a>
+              Jmenuju se Tomáš, je mi 15 let. A studuji na gymnáziu. Rád dělám webové stránky, jako například tyhle. Momentálně se také učím C#, a Unity a občas udělám něco v Pythonu
+              Také rád chodím na skauty, a občas si zahraju nějakou hru.
             </p>
+          </div>
         </div>
-      </div>
+        <div class="pageMargin"></div>
+        <div class="row">
+          <div class="karta col offset-l6 offset-s0 l6 s12">
+            <h1>Co umím</h1>
+            <p>
+              HTML
+              <div class="progress">
+                <div class="determinate red" style="width:65%"></div>
+              </div>
+              CSS
+              <div class="progress">
+                <div class="determinate blue" style="width:35%"></div>
+              </div>
+              JavaScript
+              <div class="progress">
+                <div class="determinate yellow" style="width:15%"></div>
+              </div>
+              Python
+              <div class="progress">
+                <div class="determinate blue" style="width:20%"></div>
+              </div>
+              Linux
+              <div class="progress">
+                <div class="determinate green" style="width:25%"></div>
+              </div>
+            </p>
+          </div>
+        </div>
+        <div class="pageMargin"></div>
+        <div class="row">
+          <div class="nadpis center">Moje Projekty</div>
+          <div class="pageMargin"></div>
+          <div class="karta col l6 s12">
+            <h1>skautská stránka</h1>
+            <p>
+              Stránka pro skautský oddíl kam chodím, obsahuje všechno důležité jako novinky, kontakt a galerii. 
+            </p>
+            <a href="https://vodacilouny.ovh">
+              <div class="tlacitko">VODACILOUNY.OVH</div>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="pageMargin"></div>
+          <div class="karta col offset-l6 offset-s0 l6 s12">
+            <h1>wiki image scraper</h1>
+            <p>
+              Jednoduchý Python script pro stahování obrázků z internetu, a vytváření html souboru s těmito obrázky, který byl později implementován i do Discord Bota.
+            </p>
+            <a href="https://github.com/kendy205/wikimagescraper">
+              <div class="tlacitko">GITHUB REPOSITORY</div>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="pageMargin"></div>
+          <div class="karta col l6 s12">
+            <h1>osobní stránka</h1>
+            <p>
+              Tato stránka, kterou jsem vytvořil pomocí <a href="https://threejs.org">three.js</a> a <a href="https://materializecss.com">materialize.css</a>
+            </p>
+            <a href="https://github.com/kendy205/tomaskebrle.eu">
+              <div class="tlacitko">GITHUB REPOSITORY</div>
+            </a>
+          </div>
+        </div>
+        <div class="pageMargin"></div>
+        <div class="email center"><a href="mailto:tomas.kebrle@pm.me">tomas.kebrle@pm.me</a></div>
+        <div class="pageMargin"></div>
+        
     </div>
-  </footer>
-
-
-  <!----------------------------------Scripty------------------------------->
-  <script type="text/javascript">
-    // Sidenav stuff
-    document.addEventListener('DOMContentLoaded', function () {
-      var elems = document.querySelectorAll('.sidenav');
-      var instances = M.Sidenav.init(elems);
-    });
-
-    document.addEventListener('DOMContentLoaded', function () {
-      var elems = document.querySelectorAll('.dropdown-trigger');
-      var instances = M.Dropdown.init(elems);
-    });
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-</body>
-
+    <footer class="page-footer grey darken-3">
+              <div class="container no-links">
+                <div class="row">
+                  <div class="col l6 s12">
+                    <h5 class="white-text">Tomáš Kebrle</h5>
+                    <p>
+                      <a href="threejs.org">threejs.org</a> licencováno pod <a href="https://github.com/mrdoob/three.js/blob/dev/LICENSE">MIT licencí</a> <br>
+                      <a href="materializecss.com">materializecss</a> licencováno pod <a href="https://github.com/Dogfalo/materialize/blob/v1-dev/LICENSE">MIT licencí</a>
+                    </p>
+                  </div>
+                  <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                      <li>
+                        <a href="github.com/Kendy205">GitHub</a>
+                      </li>
+                      <li>
+                        <a href="mailto:tomas.kebrle@pm.me">tomas.kebrle@pm.me</a>
+                      </li>
+                      <li>
+                        <a href="github.com/kendy205/tomaskebrle.eu">Source Code</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-copyright grey darken-4">
+                <div class="container">
+                © 2021 Tomáš Kebrle / tomaskebrle.eu
+                <a class="grey-text text-lighten-4 right" href="mailto:tomas.kebrle@pm.me">tomas.kebrle@pm.me</a>
+                </div>
+              </div>
+            </footer>
+    </main>
+    
+    <script type="module" src="/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS.load('particles-js', 'https://raw.githubusercontent.com/VincentGarreau/particles.js/master/demo/particles.json', function() {
+      console.log('callback - particles.js config loaded');
+      });
+    </script>
+  </body>
 </html>
