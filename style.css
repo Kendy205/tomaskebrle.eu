@@ -15,7 +15,7 @@ main {
 }
 
 h1 {
-	font-size: 100px;
+	font-size: 10rem;
 	font-family: elevon, sans-serif;
 }
 .pageMargin {
@@ -28,7 +28,8 @@ h1 {
 }
 
 .nadpis {
-	font-size: 9em;
+	display: block;
+	font-size: 10vh;
 	font-family: elevon, sans-serif;
 	background: rgba(100%, 100%, 100%, 95%);
 	color: #000;
@@ -36,8 +37,19 @@ h1 {
 	max-width: min-content;
 }
 
+.nadpis-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.email-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
 .email {
-	font-size: 4em;
+	text-align: center;
+	font-size: 5vh;
 	padding: 10px;
 	font-family: elevon, sans-serif;
 	background: rgba(100%, 100%, 100%, 95%);
